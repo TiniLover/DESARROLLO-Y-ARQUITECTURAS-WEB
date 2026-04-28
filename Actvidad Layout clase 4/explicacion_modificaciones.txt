@@ -1,0 +1,23 @@
+MODIFICACIONES CSS - ACTIVIDAD LAYOUT
+
+
+Modificación 1 - Mover el menú a la derecha:
+Cambié float:left por float:right en el #menu. También cambie el  border-right a border-left para que quede bien ubicado. El contenido se queda con float:left así quedan uno al lado del otro pero invertidos.
+
+
+Modificación 2 - Eliminar el menú:
+
+Le agregue display:none al #menu. Esto hace que se elimine completamente y no deje espacio vacío.
+
+
+Modificación 3 - Ocultar el pie de página:
+
+Usé la propiedad visibility:hidden en el #pie. El pie no se ve pero el espacio donde estaba se mantiene.
+
+
+Modificación 4 - Ocultar el encabezado:
+
+Usé el display:none en la #cabecera, igual que con el menú, lo que hace que se elimine y el resto del contenido suba.
+
+
+Diferencia clave: el display:none elimina el elemento del flujo (no ocupa lugar), en cambio visibility:hidden lo oculta pero el espacio se mantiene.

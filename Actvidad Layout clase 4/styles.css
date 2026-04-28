@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border: 2px solid #999;
+}
+
+#cabecera {
+  background-color: #c0c0c0;
+  padding: 20px;
+  border-bottom: 1px solid #999;
+}
+
+#cabecera h1 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+#menu {
+  float: left;
+  width: 20%;
+  background-color: #d0d0d0;
+  padding: 15px 10px;
+  border-right: 1px solid #999;
+  min-height: 150px;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu ul li {
+  margin-bottom: 8px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#contenido {
+  float: left;
+  width: 80%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  min-height: 150px;
+}
+
+#pie {
+  clear: both;
+  background-color: #c0c0c0;
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid #999;
+}
+
+
+/* =====================================================
+   MODIFICACION 1: Mover el menú a la derecha
+   Se cambia float:left a float:right en #menu para
+   que aparezca a la derecha del contenido principal.
+   ===================================================== */
+#menu {
+  float: right;
+  width: 20%;
+  background-color: #d0d0d0;
+  padding: 15px 10px;
+  border-left: 1px solid #999;
+  border-right: none;
+  min-height: 150px;
+}
+
+#contenido {
+  float: left;
+  width: 80%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  min-height: 150px;
+}
+
+
+/* =====================================================
+   MODIFICACION 2: Eliminar el menú
+   display:none quita el elemento del flujo del documento:
+   no ocupa espacio ni es visible.
+   ===================================================== */
+#menu {
+  display: none;
+}
+
+
+/* =====================================================
+   MODIFICACION 3: Ocultar el pie de página
+   visibility:hidden lo oculta visualmente pero
+   conserva el espacio que ocupa en la página.
+   ===================================================== */
+#pie {
+  visibility: hidden;
+}
+
+
+/* =====================================================
+   MODIFICACION 4: Ocultar el encabezado
+   display:none elimina la cabecera del flujo,
+   sin dejar espacio vacío en su lugar.
+   ===================================================== */
+#cabecera {
+  display: none;
+}
