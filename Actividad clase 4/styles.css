@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  border: 1px solid white;
+}
+
+#cabecera {
+  background-color:white;
+  padding: 15px 20px;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#cabecera img {
+  height: 70px;
+  width: auto;
+  object-fit: cover;
+}
+
+#cabecera h1 {
+  font-size: 1.3rem;
+}
+
+
+#menu {
+  float: left;
+  width: 18%;
+  background-color: white;
+  padding: 15px 10px;
+  border-right: 1px solid white;
+  min-height: 400px;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: blue;
+  font-size: 0.85rem;
+}
+
+#menu ul li a:hover {
+  text-decoration: underline;
+}
+
+
+#contenido {
+  float: left;
+  width: 82%;
+  padding: 20px 25px;
+  background-color: white;
+}
+
+#contenido h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+#contenido p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+#contenido ul {
+  margin: 12px 0 16px 20px;
+}
+
+#contenido ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+
+.resaltado-verde {
+  background-color: green;
+}
+
+.resaltado-amarillo {
+  background-color: yellow;
+}
+
+.resaltado-celeste {
+  background-color: lightblue;
+}
+
+.rojo {
+  color: red;
+}
+
+/* PIE */
+#pie {
+  clear: both;
+  background-color: white;
+  padding: 12px 20px;
+  text-align: center;
+  border-top: 1px solid white;
+  font-size: 0.9rem;
+}
+
+#pie a {
+  color: blue;
+}
