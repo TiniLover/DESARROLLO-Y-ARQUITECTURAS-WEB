@@ -1,0 +1,249 @@
+/* === RESET === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === VARIABLES DE COLOR === */
+:root {
+  --turquesa:  #0ab5c2;
+  --amarillo:  #f5c518;
+  --negro:     #1a1a1a;
+  --gris:      #555555;
+  --blanco:    #ffffff;
+}
+
+/* === BODY === */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #d8d8d8;
+  color: var(--negro);
+}
+
+/* === CONTENEDOR PRINCIPAL === */
+.pagina {
+  width: 780px;
+  margin: 30px auto;
+  background: var(--blanco);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* === CABECERA: numero y fecha === */
+.cabecera-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #f2f2f2 0%, #e2e0e0 50%, #f5f5f5 100%);
+  border-bottom: 4px solid var(--amarillo);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+/* === CABECERA: titulo grande === */
+.cabecera-titulo {
+  text-align: center;
+  padding: 28px 20px 18px;
+  background: linear-gradient(135deg, #f9f9f9 0%, #e6e4e4 60%, #f2f2f2 100%);
+}
+
+.cabecera-titulo h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: var(--negro);
+  line-height: 1;
+}
+
+.nombre-colegio {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--gris);
+  margin-top: 8px;
+}
+
+/* === FRANJA AMARILLA === */
+.franja-amarilla {
+  height: 6px;
+  background-color: var(--amarillo);
+}
+
+/* === TABLA DE DOS COLUMNAS === */
+.cuerpo {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* === SIDEBAR (columna izquierda) === */
+.sidebar {
+  width: 205px;
+  background-color: var(--turquesa);
+  padding: 18px 14px 24px;
+  color: var(--blanco);
+  vertical-align: top;
+}
+
+.en-este-numero {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--blanco);
+  margin-bottom: 16px;
+}
+
+/* Cada articulo del sidebar */
+.articulo-lateral {
+  margin-bottom: 18px;
+}
+
+.articulo-lateral h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--amarillo);
+  text-decoration: underline;
+  margin-bottom: 6px;
+}
+
+.articulo-lateral p {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #dff5f7;
+}
+
+/* === TABLA DE CONTENIDO (dentro del sidebar) === */
+.tabla-contenido {
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+.tabla-contenido h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--amarillo);
+  margin-bottom: 8px;
+}
+
+.tabla-contenido ul {
+  list-style: none;
+}
+
+.tabla-contenido ul li {
+  font-size: 11px;
+  color: #dff5f7;
+  padding: 3px 0;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-item {
+  flex: 1;
+}
+
+.pagina-item {
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+/* === CONTENIDO PRINCIPAL (columna derecha) === */
+.contenido-principal {
+  padding: 20px 22px 28px;
+  background-color: var(--blanco);
+  vertical-align: top;
+}
+
+/* Imagen */
+.foto-principal {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  object-position: 80% 25%;
+  display: block;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+/* Titular */
+.contenido-principal h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--negro);
+  margin-bottom: 12px;
+}
+
+/* Parrafo */
+.contenido-principal .lead {
+  font-size: 13px;
+  color: var(--gris);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.contenido-principal .lead strong {
+  font-weight: 700;
+  color: var(--negro);
+}
+
+.contenido-principal .lead em {
+  font-style: italic;
+}
+
+.contenido-principal .lead u {
+  text-decoration: underline;
+  text-decoration-color: var(--turquesa);
+}
+
+/* === ETIQUETA SIGUE EN P. 7 === */
+.sigue-wrapper {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.sigue {
+  display: inline-block;
+  background-color: var(--amarillo);
+  color: var(--negro);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 2px;
+}
+
+/* === ENLACE EXTERNO === */
+.enlace-externo {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--turquesa);
+  text-decoration: none;
+}
+
+.enlace-externo:hover {
+  text-decoration: underline;
+}
+
+/* === PIE DE PAGINA === */
+.pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+  border-top: 3px solid var(--amarillo);
+  background-color: #fafafa;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gris);
+}
